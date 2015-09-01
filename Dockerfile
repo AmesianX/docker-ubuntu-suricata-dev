@@ -2,6 +2,7 @@ FROM ubuntu:14.04
 
 RUN apt-get update && \
     apt-get -y install \
+    git-core \
     libpcre3 \
     libpcre3-dbg \
     libpcre3-dev \
@@ -22,6 +23,5 @@ RUN apt-get update && \
     libnetfilter-queue-dev \
     libnetfilter-queue1 \
     libnfnetlink-dev \
-    libnfnetlink0
-RUN apt-get -y install git-core
-RUN apt-get -y install libjansson-dev
+    libnfnetlink0 \
+    libjansson-dev
